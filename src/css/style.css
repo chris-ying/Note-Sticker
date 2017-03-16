@@ -1,0 +1,171 @@
+/* line 7, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+html {
+  position: relative;
+  min-height: 100%; }
+
+/* line 12, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+body {
+  font-size: 16px;
+  font-family: Calibri;
+  margin-bottom: 60px;
+  background: url(../img/white-background.jpg); }
+
+/* line 19, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+ul {
+  list-style: none;
+  padding: 0px; }
+
+/* line 24, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+.main-container {
+  width: 80%;
+  margin: 0 auto; }
+
+/* line 29, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+#alert-box {
+  box-shadow: 1px 1px 2px #3a3a3a; }
+
+/* line 33, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+#alert-box p {
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 1.1em; }
+
+/*main section*/
+/* line 40, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+.title {
+  font-size: 3em;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 600; }
+
+/* line 47, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+#react-container {
+  padding: 10px; }
+
+/* line 51, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+#input-section {
+  text-align: center;
+  padding-bottom: 20px; }
+
+/* line 56, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+#input-field {
+  background: rgba(240, 240, 240, 0.3);
+  box-shadow: 1px 1px 1px #666666;
+  border: 1px solid #666666;
+  padding: 5px;
+  border-radius: 3px;
+  margin-right: 10px; }
+
+/* line 65, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+#add-btn {
+  background: #ff5a19;
+  border: none;
+  border-radius: 3px;
+  transition: 0.3s all;
+  font-size: 1.1em;
+  color: #fff;
+  margin-top: -3px;
+  box-shadow: 1px 1px 3px #3a3a3a;
+  padding: 5px 15px;
+  opacity: 0.9; }
+  /* line 77, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+  #add-btn:hover {
+    background: #ff3700;
+    color: #fff;
+    opacity: 1; }
+
+/* line 84, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+.card {
+  width: 30%;
+  height: 200px;
+  overflow: hidden;
+  background: rgba(255, 200, 60, 0.8);
+  box-shadow: 1px 1px 5px #666666;
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  transition: all 0.5s; }
+  /* line 95, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+  .card:hover {
+    transform: scale(1.03); }
+  /* line 99, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+  .card span {
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+
+/* line 106, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+.text-wrapper {
+  width: 100%;
+  height: 100%;
+  display: table; }
+
+/* line 112, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+h3 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  word-break: break-all;
+  padding: 20px; }
+
+/* line 120, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+.remove-btn {
+  color: #fff;
+  border-radius: 1px;
+  padding: 2px 6px; }
+  /* line 125, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+  .remove-btn:hover {
+    color: #fff;
+    background: #ff5a19;
+    box-shadow: 1px 1px 1px #3a3a3a; }
+
+/* footer */
+/* line 133, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+footer {
+  position: absolute;
+  height: 60px;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 10px; }
+  /* line 142, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+  footer ul li {
+    display: inline-block;
+    padding: 5px 10px; }
+
+/* line 148, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+.footer-border {
+  border-right: 2px solid #666666; }
+
+/* line 152, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+#footer-line {
+  border-bottom: 1px solid #e2e2e2;
+  margin: 12px; }
+
+@media screen and (max-width: 800px) {
+  /* line 160, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+  .card {
+    width: 45%; } }
+
+@media screen and (max-width: 550px) {
+  /* line 167, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+  .main-container {
+    width: 70%; }
+  /* line 171, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+  .card {
+    width: 100%;
+    display: block; }
+  /* line 176, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+  footer ul {
+    margin: 6px;
+    padding-top: 0px; }
+    /* line 180, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+    footer ul li {
+      display: block;
+      padding: 3px; }
+  /* line 186, /Users/yingyong/Documents/Dev/React/cards/src/css/style.scss */
+  .footer-border {
+    border: none; } }
+
+/*# sourceMappingURL=style.css.map */
