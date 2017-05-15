@@ -14,10 +14,16 @@ var Board = React.createClass({
         this.uniqueId = this.uniqueId || 0
         return this.uniqueId++
     },
-
+		
+		keyPress: function(e) {
+			if (e.key === 'Enter') {
+				this.add(e.target.value)
+				e.preventDefault()
+			}
+		},
+	
     add() {
-        var newText = this.refs.newText
-        
+				var newText = this.refs.newText
         var cards = [
             ...this.state.cards,
             {
@@ -29,7 +35,7 @@ var Board = React.createClass({
         
         newText.value = ''
     },
-
+		
     remove(id) {
         var cards = this.state.cards.filter(card => card.id !== id)
         this.setState({cards})
@@ -47,7 +53,7 @@ var Board = React.createClass({
         return (
             <div>
                <form id="input-section">
-                    <input ref="newText" id="input-field" placeholder="Input text here" />
+                    <input ref="newText" id="input-field" placeholder="Input text here" onKeyPress={ this.keyPress } require/>
                     <div id="add-btn" className="btn" onClick={ this.add }>Add</div>
                </form>
 
